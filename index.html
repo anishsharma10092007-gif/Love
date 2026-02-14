@@ -29,7 +29,7 @@ display:none;
 justify-content:center;
 align-items:center;
 flex-direction:column;
-z-index:99999; 
+z-index:99999;   /* SUPER TOP */
 pointer-events:auto;
 }
 #proposal button{margin:20px;padding:12px 25px;font-size:18px;}
@@ -136,5 +136,6 @@ for(let i=0;i<200;i++){stars.push({x:Math.random()*canvas.width,y:Math.random()*
 function drawStars(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle="white";stars.forEach(s=>{ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();});requestAnimationFrame(drawStars);}
 drawStars();
 </script>
+
 </body>
 </html>
