@@ -141,7 +141,12 @@ font-size:28px;
 </div>
 
 <br>
-<button onclick="openProposal()">Special Question 💍</button>
+<button onclick="openProposal(function openProposal(){
+  var prop = document.getElementById("proposal");
+  prop.style.display="flex";
+  prop.style.zIndex="9999";
+  prop.style.position="fixed";
+  })">Special Question 💍</button>
 </div>
 </div>
 
